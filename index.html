@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judy & Steve — We're Getting Married!</title>
+    <meta name="description" content="Join us in celebrating the wedding of Judy Lam and Steve Huang. RSVP, view wedding details, and contribute to our honeymoon fund.">
+    <meta name="theme-color" content="#8B1A1A">
+    <meta property="og:title" content="Judy & Steve — We're Getting Married!">
+    <meta property="og:description" content="Join us in celebrating our wedding day. RSVP and view all the details.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&family=Noto+Serif+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- PASSWORD GATE                               -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div id="password-gate">
+        <div class="gate-pattern"></div>
+        <div class="gate-card">
+            <div class="gate-ornament">囍</div>
+            <h2 class="gate-title">You're Invited</h2>
+            <p class="gate-subtitle">Please enter the password to view our wedding website</p>
+            <form id="password-form">
+                <div class="gate-input-wrap">
+                    <input type="password" id="password-input" placeholder="Enter password" autocomplete="off" required>
+                    <div class="gate-input-border"></div>
+                </div>
+                <p id="password-error" class="gate-error"></p>
+                <button type="submit" class="btn btn-gold">Enter</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- NAVIGATION                                  -->
+    <!-- ═══════════════════════════════════════════ -->
+    <nav id="main-nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">J <span class="nav-ampersand">&</span> S</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#our-story" class="nav-link">Our Story</a></li>
+                <li><a href="#details" class="nav-link">Details</a></li>
+                <li><a href="#rsvp" class="nav-link">RSVP</a></li>
+                <li><a href="#registry" class="nav-link">Registry</a></li>
+                <li><a href="#travel" class="nav-link">Travel</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- HERO SECTION                                -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="hero">
+        <div class="hero-bg" style="background-image: url('images/hero-bg.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-pretext fade-in-up">Together with their families</p>
+            <h1 class="hero-names fade-in-up">
+                <span class="name-first">Judy Lam</span>
+                <span class="hero-ampersand">&</span>
+                <span class="name-second">Steve Huang</span>
+            </h1>
+            <div class="hero-divider fade-in-up">
+                <span class="divider-line"></span>
+                <span class="divider-symbol">囍</span>
+                <span class="divider-line"></span>
+            </div>
+            <p class="hero-date fade-in-up">October 10, 2026</p>
+            <p class="hero-venue fade-in-up">City · State</p>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">Scroll</span>
+            <span class="scroll-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
+            </span>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- OUR STORY                                   -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="our-story" class="section">
+        <div class="section-header fade-in-up">
+            <span class="section-label">Our Journey</span>
+            <h2 class="section-title">Our Story</h2>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-symbol">♥</span>
+                <span class="divider-line"></span>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item fade-in-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">The Beginning</span>
+                    <h3 class="timeline-title">How We Met</h3>
+                    <p class="timeline-text">Our paths first crossed in the most unexpected way. What started as a chance encounter soon blossomed into something beautiful. From the very first conversation, we knew there was something special between us.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-item-right fade-in-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">Falling in Love</span>
+                    <h3 class="timeline-title">First Date</h3>
+                    <p class="timeline-text">Our first date was filled with laughter, great food, and endless conversations. We quickly discovered how much we had in common and how naturally we connected. It was the beginning of an incredible adventure together.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item fade-in-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">The Adventure</span>
+                    <h3 class="timeline-title">Growing Together</h3>
+                    <p class="timeline-text">From traveling the world to quiet evenings at home, every moment together has been a treasure. We've supported each other through life's ups and downs, growing stronger with each passing day.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item timeline-item-right fade-in-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">Forever Begins</span>
+                    <h3 class="timeline-title">The Proposal</h3>
+                    <p class="timeline-text">With hearts full of love, the question was asked — and the answer was a resounding yes! We can't wait to begin this next chapter of our lives together, surrounded by the people we love most.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- WEDDING DETAILS                             -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="details" class="section section-alt">
+        <div class="section-header fade-in-up">
+            <span class="section-label">The Celebration</span>
+            <h2 class="section-title">Wedding Details</h2>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-symbol">囍</span>
+                <span class="divider-line"></span>
+            </div>
+        </div>
+
+        <div class="details-grid">
+            <div class="detail-card fade-in-up">
+                <div class="detail-icon">🏛️</div>
+                <h3 class="detail-title">Ceremony</h3>
+                <p class="detail-time">5:00 PM</p>
+                <p class="detail-location">Venue Name</p>
+                <p class="detail-address">123 Wedding Lane<br>City, State 00000</p>
+            </div>
+
+            <div class="detail-card fade-in-up">
+                <div class="detail-icon">🥂</div>
+                <h3 class="detail-title">Cocktail Hour</h3>
+                <p class="detail-time">5:30 PM</p>
+                <p class="detail-location">Grand Ballroom Foyer</p>
+                <p class="detail-address">Drinks and hors d'oeuvres<br>while we take photos</p>
+            </div>
+
+            <div class="detail-card fade-in-up">
+                <div class="detail-icon">🍽️</div>
+                <h3 class="detail-title">Banquet Reception</h3>
+                <p class="detail-time">6:30 PM</p>
+                <p class="detail-location">Grand Ballroom</p>
+                <p class="detail-address">10-course Chinese banquet<br>dinner, toasts & celebration</p>
+            </div>
+
+            <div class="detail-card fade-in-up">
+                <div class="detail-icon">👔</div>
+                <h3 class="detail-title">Dress Code</h3>
+                <p class="detail-time">Formal / Black Tie Optional</p>
+                <p class="detail-location">Colors Welcome</p>
+                <p class="detail-address">Feel free to wear red & gold<br>to celebrate with us!</p>
+            </div>
+        </div>
+
+        <div class="venue-image-wrap fade-in-up">
+            <img src="images/venue.png" alt="Wedding venue — Chinese banquet setting" class="venue-image" loading="lazy">
+            <div class="venue-image-caption">Our Reception Venue</div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- RSVP                                        -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="rsvp" class="section">
+        <div class="section-header fade-in-up">
+            <span class="section-label">Be Our Guest</span>
+            <h2 class="section-title">RSVP</h2>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-symbol">♥</span>
+                <span class="divider-line"></span>
+            </div>
+            <p class="section-subtitle">Please respond by September 1, 2026</p>
+        </div>
+
+        <div class="rsvp-card fade-in-up">
+            <form id="rsvp-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="rsvp-name" class="form-label">Full Name *</label>
+                        <input type="text" id="rsvp-name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rsvp-email" class="form-label">Email *</label>
+                        <input type="email" id="rsvp-email" name="email" class="form-input" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Will you be attending? *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="attending" value="yes" required>
+                            <span class="radio-custom"></span>
+                            Joyfully accepts
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="attending" value="no">
+                            <span class="radio-custom"></span>
+                            Regretfully declines
+                        </label>
+                    </div>
+                </div>
+
+                <div id="attending-fields" class="conditional-fields">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="rsvp-guests" class="form-label">Number of Guests</label>
+                            <select id="rsvp-guests" name="guests" class="form-input form-select">
+                                <option value="1">1 (Just me)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="rsvp-meal" class="form-label">Meal Preference</label>
+                            <select id="rsvp-meal" name="meal" class="form-input form-select">
+                                <option value="standard">Standard (10-Course Banquet)</option>
+                                <option value="vegetarian">Vegetarian</option>
+                                <option value="vegan">Vegan</option>
+                                <option value="halal">Halal</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rsvp-dietary" class="form-label">Dietary Restrictions / Allergies</label>
+                        <textarea id="rsvp-dietary" name="dietary" class="form-input form-textarea" rows="2" placeholder="Please let us know of any allergies or dietary needs"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rsvp-song" class="form-label">Song Request 🎵</label>
+                        <input type="text" id="rsvp-song" name="song" class="form-input" placeholder="What song will get you on the dance floor?">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rsvp-message" class="form-label">Message to the Couple</label>
+                    <textarea id="rsvp-message" name="message" class="form-input form-textarea" rows="3" placeholder="Share your well-wishes with us!"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-gold btn-lg" id="rsvp-submit">
+                    <span class="btn-text">Send RSVP</span>
+                    <span class="btn-loading" style="display:none;">Sending...</span>
+                </button>
+            </form>
+
+            <div id="rsvp-success" class="rsvp-success" style="display:none;">
+                <div class="success-icon">🎉</div>
+                <h3 class="success-title">Thank You!</h3>
+                <p class="success-text">Your RSVP has been received. We can't wait to celebrate with you!</p>
+            </div>
+
+            <div id="rsvp-declined" class="rsvp-success" style="display:none;">
+                <div class="success-icon">💝</div>
+                <h3 class="success-title">We'll Miss You!</h3>
+                <p class="success-text">Thank you for letting us know. You'll be in our hearts on our special day.</p>
+            </div>
+        </div>
+
+        <div id="confetti-container"></div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- REGISTRY / HONEYMOON FUND                   -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="registry" class="section section-alt">
+        <div class="section-header fade-in-up">
+            <span class="section-label">Celebrate With Us</span>
+            <h2 class="section-title">Honeymoon Fund</h2>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-symbol">✈</span>
+                <span class="divider-line"></span>
+            </div>
+            <p class="section-subtitle">Your presence at our wedding is the greatest gift of all. However, if you wish to honor us with a gift, a contribution to our honeymoon fund would be deeply appreciated.</p>
+        </div>
+
+        <div class="fund-hero fade-in-up">
+            <img src="images/honeymoon.png" alt="Tropical honeymoon destination" class="fund-hero-image" loading="lazy">
+            <div class="fund-hero-overlay">
+                <p class="fund-hero-text">Help us create unforgettable memories</p>
+            </div>
+        </div>
+
+        <div id="fund-grid" class="fund-grid">
+            <!-- Rendered by honeymoon.js -->
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- TRAVEL & ACCOMMODATIONS                     -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="travel" class="section">
+        <div class="section-header fade-in-up">
+            <span class="section-label">Getting There</span>
+            <h2 class="section-title">Travel & Accommodations</h2>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-symbol">🏨</span>
+                <span class="divider-line"></span>
+            </div>
+        </div>
+
+        <div class="travel-grid">
+            <div class="travel-card fade-in-up">
+                <div class="travel-icon">🏨</div>
+                <h3 class="travel-title">Hotel Block</h3>
+                <p class="travel-text">We've reserved a block of rooms at a discounted rate for our guests.</p>
+                <div class="travel-detail">
+                    <strong>Hotel Name</strong><br>
+                    123 Hotel Street<br>
+                    City, State 00000<br>
+                    <em>Rate: $XXX/night</em>
+                </div>
+                <a href="#" class="btn btn-outline" target="_blank" rel="noopener">Book Now</a>
+            </div>
+
+            <div class="travel-card fade-in-up">
+                <div class="travel-icon">✈️</div>
+                <h3 class="travel-title">Getting There</h3>
+                <p class="travel-text">The nearest airport is conveniently located close to the venue.</p>
+                <div class="travel-detail">
+                    <strong>Nearest Airport</strong><br>
+                    Airport Name (CODE)<br>
+                    ~XX minutes from venue<br>
+                    <em>Rideshare recommended</em>
+                </div>
+            </div>
+
+            <div class="travel-card fade-in-up">
+                <div class="travel-icon">🚗</div>
+                <h3 class="travel-title">Parking</h3>
+                <p class="travel-text">Complimentary parking is available at the venue.</p>
+                <div class="travel-detail">
+                    <strong>Venue Parking</strong><br>
+                    Free valet parking<br>
+                    Self-parking also available<br>
+                    <em>Enter via main entrance</em>
+                </div>
+            </div>
+
+            <div class="travel-card fade-in-up">
+                <div class="travel-icon">🍜</div>
+                <h3 class="travel-title">Local Favorites</h3>
+                <p class="travel-text">Making a weekend of it? Here are some of our favorite spots.</p>
+                <div class="travel-detail">
+                    <strong>Restaurants & Attractions</strong><br>
+                    Restaurant 1 — Dim Sum<br>
+                    Restaurant 2 — Boba Tea<br>
+                    <em>Attraction — Local Sightseeing</em>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- PHOTO GALLERY                               -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="gallery" class="section section-alt">
+        <div class="section-header fade-in-up">
+            <span class="section-label">Moments</span>
+            <h2 class="section-title">Gallery</h2>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-symbol">📸</span>
+                <span class="divider-line"></span>
+            </div>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item fade-in-up" data-index="0">
+                <img src="images/couple.png" alt="Judy and Steve" class="gallery-image" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">View</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-in-up" data-index="1">
+                <img src="images/hero-bg.png" alt="Chinese wedding details" class="gallery-image" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">View</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-in-up" data-index="2">
+                <img src="images/gallery-1.png" alt="Tea ceremony" class="gallery-image" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">View</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-in-up" data-index="3">
+                <img src="images/venue.png" alt="Banquet setting" class="gallery-image" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">View</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-in-up" data-index="4">
+                <img src="images/gallery-2.png" alt="Wedding details" class="gallery-image" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">View</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-in-up" data-index="5">
+                <img src="images/honeymoon.png" alt="Honeymoon destination" class="gallery-image" loading="lazy">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">View</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous">&#10094;</button>
+        <button class="lightbox-next" aria-label="Next">&#10095;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="Gallery photo" class="lightbox-image">
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FAQ                                         -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="faq" class="section">
+        <div class="section-header fade-in-up">
+            <span class="section-label">Questions</span>
+            <h2 class="section-title">FAQ</h2>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-symbol">?</span>
+                <span class="divider-line"></span>
+            </div>
+        </div>
+
+        <div class="faq-list">
+            <div class="faq-item fade-in-up">
+                <button class="faq-question" aria-expanded="false">
+                    <span>What is the dress code?</span>
+                    <span class="faq-chevron">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="faq-answer">
+                    <p>The dress code is formal / black tie optional. We'd love to see you in your finest! Feel free to incorporate red and gold into your outfit to celebrate with us in the traditional Chinese wedding colors.</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in-up">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Can I bring a plus one?</span>
+                    <span class="faq-chevron">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="faq-answer">
+                    <p>Due to venue capacity, we can only accommodate those guests formally invited. Please refer to your invitation for the number of seats reserved in your honor. If you have questions, please reach out to us directly.</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in-up">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Are children welcome?</span>
+                    <span class="faq-chevron">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="faq-answer">
+                    <p>While we love your little ones, our wedding will be an adults-only celebration. We hope this gives you the opportunity to enjoy an evening out!</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in-up">
+                <button class="faq-question" aria-expanded="false">
+                    <span>What type of food will be served?</span>
+                    <span class="faq-chevron">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="faq-answer">
+                    <p>We'll be having a traditional 10-course Chinese banquet dinner! Expect dishes like roasted suckling pig, steamed lobster, Peking duck, and more. Vegetarian and other dietary options are available — please indicate your preference in the RSVP form.</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in-up">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Is there parking at the venue?</span>
+                    <span class="faq-chevron">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! Complimentary valet parking is available for all guests. Self-parking is also available in the venue's lot. Please enter through the main entrance.</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in-up">
+                <button class="faq-question" aria-expanded="false">
+                    <span>When should I RSVP by?</span>
+                    <span class="faq-chevron">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="faq-answer">
+                    <p>Please RSVP by September 1, 2026 so we can finalize our guest count and seating arrangements. You can RSVP right here on this website — just scroll up to the RSVP section!</p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in-up">
+                <button class="faq-question" aria-expanded="false">
+                    <span>What about gifts?</span>
+                    <span class="faq-chevron">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="faq-answer">
+                    <p>Your presence is truly the best present! If you'd like to give a gift, we have a honeymoon fund set up on this website. In keeping with Chinese tradition, monetary gifts in red envelopes (红包) are also warmly appreciated.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FOOTER                                      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-names">
+                <span class="footer-symbol">囍</span>
+                <h2 class="footer-couple">Judy & Steve</h2>
+                <p class="footer-date">October 10, 2026</p>
+            </div>
+
+            <div class="countdown-wrap">
+                <p class="countdown-label">Counting Down To Our Big Day</p>
+                <div id="countdown" class="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countdown-days">000</span>
+                        <span class="countdown-unit">Days</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countdown-hours">00</span>
+                        <span class="countdown-unit">Hours</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countdown-minutes">00</span>
+                        <span class="countdown-unit">Minutes</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countdown-seconds">00</span>
+                        <span class="countdown-unit">Seconds</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-credit">Made with ❤️ by Judy & Steve</p>
+                <p class="footer-copy">&copy; 2026 — See you at the banquet!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/rsvp.js"></script>
+    <script src="js/honeymoon.js"></script>
+</body>
+</html>
